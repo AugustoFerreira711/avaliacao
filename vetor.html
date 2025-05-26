@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vetor</title>
+    </head>
+    <body>
+
+        <script>
+            var nome =["Mario","Augusto","Jose","Luiz","Maria","Mateus","Marcos","Antonio","Pedro","Jennifer"];
+            var genero = ["Masculino","Masculino","Masculino","Masculino","Feminino","Masculino","Masculino","Masculino","Masculino","Feminino"];
+            var CPF =["insira aqui o cpf"];
+            var endereco =["Rua Dr. Celso","Rua do Gato Preto","Rua Títere Humberto","Rua Torta de Morango","Rua das Flores","Rua Macabeus","Rua do Palmeras","Rua Sergio Perreira","Rua do Santo Antonio","Rua dos Namorados"];
+            
+            let i = 0;
+                document.write("<table border=1>");
+                    for(i = 0; i < nome.length; i++){
+                        document.write("<tr>");
+                            document.write("<td>");
+                            document.write("Nome: " + nome[i]);
+                            document.write("<td>");
+                        document.write("<tr>");
+
+                        document.write("<tr>");
+                            document.write("<td>");
+                            document.write("Genero: " + genero[i]);
+                            document.write("<td>");
+                        document.write("<tr>");
+
+                        document.write("<tr>");
+                            document.write("<td>");
+                            document.write("CPF: " + CPF[i]);
+                            document.write("<td>");
+                        document.write("<tr>");
+
+                        document.write("<tr>");
+                            document.write("<td>");
+                            document.write("Endereco: " + endereco[i]);
+                            document.write("<td>");
+                        document.write("<tr>");
+                    }
+
+                document.write("</table>");
+        </script>
+
+    </body>
+</html>
