@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vetor</title>
+    </head>
+    <body>
+
+        <script>
+            var alunos =["Mario","Jose","Luiz","Maria","Mateus","Marcos","Antonio","Pedro","Jennifer","Alexandre","Henrique","Alberto","Gilmar","Gilberto","Antonella","Alice","João","Josefina","Macabeus","Augusto"];
+            var Turma = ["1º Série","3º Série","2º Série","2º Série","1º Série","1º Série","3º Série","2º Série","1º Série","3º Série","3º Série","2º Série","1º Série","1º Série","3º Série","2º Série","1º Série","3º Série","3º Série","2º Série"];
+            var Nota1 =[67,77,85,91,68,100,54,94,55,63,61,83,48,95,65,89,99,79,33,98];
+            var Nota2 =[49,46,29,55,44,100,59,58,100,72,50,40,51,30,45,75,3,92,31,95];
+            var Nota3 =[33,88,11,20,79,29,54,20,55,64,23,30,74,83,50,11,91,22,10,100];
+            var NotaTotal ;
+            var Aprovado ;
+            
+                document.write("<table border=1>");
+                    for(let i = 0; i < alunos.length;  i++){
+                        let NotaTotal = Nota1[i] + Nota2[i] + Nota3[i];
+                        let Aprovado = "Não";
+                        if(NotaTotal >= 180) {
+                            Aprovado = "Sim";
+                        }
+
+                        document.write("<tr>");
+                            document.write("<td>");
+                            document.write("Nome: " + alunos[i]);
+                            document.write("<td>");
+
+
+
+                            document.write("<td>");
+                            document.write("Turma: " + Turma[i]);
+                            document.write("<td>");
+
+
+
+                            document.write("<td>");
+                            document.write("Nota1: " + Nota1[i]);
+                            document.write("<td>");
+
+
+
+                            document.write("<td>");
+                            document.write("Nota2: " + Nota2[i]);
+                            document.write("<td>");
+
+
+
+                            document.write("<td>");
+                            document.write("Nota3: " + Nota3[i]);
+                            document.write("<td>");
+
+
+
+                            document.write("<td>");
+                            document.write("Aprovado: " + Aprovado );
+                            document.write("<td>");
+                        document.write("</tr>");
+                    }
+
+                document.write("</table>");
+        </script>
+
+    </body>
+</html>
