@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Localizador de Turmas</title>
+    </head>
+
+    <body>
+
+        <script>
+
+            var nome = ["Augusto","Mario","Pedro"];
+            var turma = ["1 Ano","2 Ano","3 Ano"];
+            var tri1 = [79,48,99];
+            var tri2 = [99,88,93];
+            var tri3 = [85,73,100];
+
+            function seleciona(localizalista){
+                nomeComparado = document.localizalista.NOME.value;
+                turmaComparado = document.localizalista.TURMA.value;
+                    let i = 0;
+                    document.write("<table border=1>");
+                    document.write("</table>");
+            }
+
+        </script>
+
+            <form NAME="localizalista">
+
+                <table>
+
+                    <tr bgcolor=red>
+
+                        <td width=40 align="center">Nome</td>
+                        <td width=40 align="center"> <INPUT NAME="NOME" VALUE=""></td>
+
+                        <td width=40 align="center">Turma</td>
+                        <td width=40 align="center"> <INPUT NAME="TURMA" VALUE=""></td> 
+
+                    </tr>
+
+                    <tr>
+
+                        <td width=80 align="center" colspan="4" bgcolor=red>
+                            <input type="button" NAME="botao" VALUE="Localizar" onclick="seleciona(localizalista)">
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </form>
+
+    </body>
+</html>
